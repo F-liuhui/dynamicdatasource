@@ -1,0 +1,8 @@
+stages:
+- name: compile
+  steps:
+  - runScriptConfig:
+      image: maven:v1
+      shellScript: mvn clean package
+timeout: 60
+notification: {}
