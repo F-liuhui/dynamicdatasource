@@ -1,2 +1,8 @@
+stages:
+- name: 构建jar包
+  steps:
+  - runScriptConfig:
+      image: java:8
+      shellScript: mvn clean package
 timeout: 60
 notification: {}
